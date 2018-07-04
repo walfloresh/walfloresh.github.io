@@ -5,7 +5,7 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!--[if lte IE 8]><script src="/forty-jekyll-theme/assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="http://localhost:82/forty/assets/css/main.css">
+	<link rel="stylesheet" href="https://www.roboc.me/assets/css/main.css">
 	<!--[if lte IE 9]><link rel="stylesheet" href="/forty-jekyll-theme/assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="/forty-jekyll-theme/assets/css/ie8.css" /><![endif]-->
 </head>
@@ -18,7 +18,7 @@
 
 <!-- Header -->
 <header id="header" class="style2 reveal alt">
-	<a href="http://localhost:82/forty/" class="logo"><strong>Roboc</strong> <span>.me</span></a>
+	<a href="https://www.roboc.me/" class="logo"><strong>Roboc</strong> <span>.me</span></a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -28,10 +28,10 @@
 
 
 
-        <section id="banner" class="style1" style="background-position: center 0px; background-image: url(&quot;http://localhost:82/forty/assets/images/fondo1.jpg&quot;);">
+        <section id="banner" class="style1" style="background-position: center 0px; background-image: url(&quot;https://www.roboc.me/assets/images/fondo1.jpg&quot;);">
             <div class="inner">
                 <span class="image" style="display: none;">
-                    <img src="http://localhost:82/forty/assets/fondo1.jpg" alt="">
+                    <img src="https://www.roboc.me/assets/fondo1.jpg" alt="">
                 </span>
                 <header class="major">
 
@@ -62,8 +62,8 @@
 <!-- Two -->
 <section id="two" class="spotlights">
 	<section>
-		<a href="https://kinenonnos.com" class="image">
-			<img src="http://localhost:82/forty/assets/images/static.jpg" alt="" data-position="center center"> 
+		<a class="image">
+			<img src="https://www.roboc.me/assets/images/static.jpg" alt="" data-position="center center"> 
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -78,8 +78,8 @@
 		</div>
 	</section>
 	<section>
-		<a href="https://andrewbanchich.gitlab.io/forty-jekyll-theme/generic.html" class="image">
-			<img src="http://localhost:82/forty/assets/images/dynamic.jpg" alt="" data-position="top center">
+		<a class="image">
+			<img src="https://www.roboc.me/assets/images/dynamic.jpg" alt="" data-position="top center">
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -114,31 +114,57 @@
 
         <!-- Contact -->
 <section id="contact">
-	<div class="inner">
-		<section>
-		<h2>Contactanos</h2>
-			<form action="https://formspree.io/contacto@roboc.me" method="POST">
-				<div class="field half first">
-					<label for="name">Nombre</label>
-					<input type="text" name="name" id="name">
-				</div>
-				<div class="field half">
-					<label for="email">Correo</label>
-					<input type="text" name="_replyto" id="email">
-				</div>
-				<div class="field">
-					<label for="message">Mensaje</label>
-					<textarea name="message" id="message" rows="6"></textarea>
-				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Enviar" class="special"></li>
-					<li><input type="reset" value="Limpiar"></li>
-				</ul>
-			</form>
-		</section>
-		
-	</div>
-</section>
+    <div class="inner">
+      <section>
+        <h2>Contactanos</h2>
+        <form action="https://formspree.io/contacto@roboc.me" method="POST">
+          <div class="field half first">
+            <label for="name">Nombre</label>
+            <input type="text" name="Nombre" id="name">
+          </div>
+          <div class="field half">
+            <label for="email">Correo</label>
+            <input type="text" name="_replyto" id="email">
+          </div>
+          <div class="field">
+            <label for="Asunto">Selecciona el asunto:</label>
+            <input type="radio" id="consulta" name="Asunto" value="Consulta" checked />
+            <label for="consulta">Consulta</label>
+            <br>
+            <input type="radio" id="web" name="Asunto" value="Web" />
+            <label for="web">Desarrollo WEB</label>
+            <br>
+            <input type="radio" id="soporte" name="Asunto" value="Soporte"/>
+            <label for="soporte">Soporte PC/Mac</label>
+            <br>
+            <input type="radio" id="armapc" name="Asunto" value="Arma tu PC"/>
+            <label for="armapc">Arma tu PC</label>
+            <br>
+            <input type="radio" id="importacion" name="Asunto" value="Importacion" disabled/>
+            <label for="importacion">Importaciones</label>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="Mensaje" rows="6"></textarea>
+          </div>
+          <ul class="actions">
+            <li>
+              <input type="submit" value="Enviar" class="special">
+            </li>
+            <li>
+              <input type="reset" value="Limpiar">
+            </li>
+          </ul>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_language" value="es" />
+        </form>
+        <script>
+				var contactform =  document.getElementById('contactform');
+    			contactform.setAttribute('action', '//formspree.io/' + 'contacto' + '@' + 'roboc' + '.' + 'me');
+			</script> 
+      </section>
+    </div>
+  </section>
 
 <!-- Footer -->
 	<footer id="footer">
@@ -177,13 +203,13 @@
 </div>
 
 <!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
+	<script src="https://www.roboc.me/assets/js/jquery.min.js"></script>
+	<script src="https://www.roboc.me/assets/js/jquery.scrolly.min.js"></script>
+	<script src="https://www.roboc.me/assets/js/jquery.scrollex.min.js"></script>
+	<script src="https://www.roboc.me/assets/js/skel.min.js"></script>
+	<script src="https://www.roboc.me/assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="/forty-jekyll-theme/assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
+	<script src="https://www.roboc.me/assets/js/main.js"></script>
 
 
 
@@ -201,7 +227,7 @@
 		    
 		
 		    
-		        <li><a href="#">Inicio</a></li>
+		        <li><a href="https://www.roboc.me/">Inicio</a></li>
 	    	
 		
 		    
@@ -212,7 +238,7 @@
 		    
 		
 		    
-		        <li><a href="#servicios">Servicios</a></li>
+		        <li><a href="https://www.roboc.me/#servicios">Servicios</a></li>
 		    
 		
 		    
@@ -220,7 +246,7 @@
 		    
 		
 		    
-		        <li><a href="/tools/index.html">Herramientas</a></li>
+		        <li><a href="https://www.roboc.me/tools/index.html">Herramientas</a></li>
 		    
 		
 		    
